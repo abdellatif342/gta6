@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abdellatif342.github.io/gta6/sitemap.xml
