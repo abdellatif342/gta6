@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>موقع GTA 6 الرسمي</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #eee;
+        }
+        .navbar {
+            background-color: #830e52;   /*#83470e*/
+        }
+        .navbar-brand {
+            font-family: 'Merienda', cursive;
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+        .navbar-toggler {
+            border-color: white; /* لون حدود الزر */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .nav-link {
+            color: #aaa !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #ffffff !important;
+        }
+        .hero-section {
+            background: url('images/SnbmwAMZdgVK7uBHePWTXZ.jpg') no-repeat center center/cover;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 15px;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(18,18,18,0.7);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+        .hero-content h1 {
+            font-family: 'Merienda', cursive;
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 0 8px #ee11a4;
+        }
+        .hero-content p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .btn-main {
+            border-radius: 50px;
+            padding: 12px 40px;
+            font-weight: 600;
+            background: #ee11a4;
+            border: none;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-main:hover {
+            background: #d4108d;
+        }
+        /* Section Titles */
+        .section-title {
+            color: #e99c2e;
+            margin-bottom: 40px;
+            font-family: 'Merienda', cursive;
+            text-align: center;
+            font-size: 2.8rem;
+        }
+        /* Cards */
+        .card {
+            background-color: #222;
+            border: none;
+            color: #eee;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(238,17,164,0.6);
+        }
+        .card-img-top {
+            border-radius: 10px 10px 0 0;
+            height: 180px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+            color: #777;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+        .swiper {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .swiper-slide {
+            width: auto !important;
+        }
+        /* تعديل قسم About لجعله متجاوب على الهاتف */
+        #about img {
+            max-width: 100%;
+            height: auto;
+        }
+        #about .text-light {
+            padding: 15px;
+            font-size: 1rem;
+        }
+        @media (max-width: 767px) {
+            #about .row.align-items-center {
+                flex-direction: column !important;
+            }
+            #about .col-md-6 {
+                max-width: 100% !important;
+                flex: 0 0 100% !important;
+            }
+        }
+        #about .text-light {
+    text-align: right; /* محاذاة إلى اليمين بدون تبرير */
+    font-family: 'Poppins', sans-serif; /* خط واضح ومناسب */
+    line-height: 1.6; /* ارتفاع سطر مناسب */
+    letter-spacing: 0.02em; /* تباعد حروف بسيط */
+    font-weight: 400; /* وزن الخط عادي */
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#">NXG </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">الأخبار</a></li>
+                <li class="nav-item"><a class="nav-link" href="#characters">الشخصيات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#videos">فيديوهات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#download">تحميل</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">حول</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1>جاهز للانطلاق؟</h1>
+        <p>عِش تجربة GTA VI كما لم تعشها من قبل! استعد للمعارك، المغامرات، والسرعة داخل عالم الجريمة.</p>
+        <a href="#download" class="btn btn-main">ابدأ التحميل الآن</a>
+    </div>
+</section>
+
+<!-- News Section -->
+<section id="news" class="container my-5">
+    <h2 class="section-title">آخر الأخبار</h2>
+
+    <!-- Swiper container -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card" style="width: 300px;">
+                    <img src="images/png/image (13).webp" class="card-img-top" alt="خبر 1">
+                    <div class="card-body">
+                        <h5 class="card-title">تحديث جديد للعبة GTA 6</h5>
+                        <p class="card-text">أعلنت Rockstar عن تحديث ضخم يتضمن مزايا جديدة مثيرة... </p>
+                        <a href="#" class="btn btn-outline-warning btn-sm">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" style="width: 300px;">
+                    <img src="images/png/image (3).webp" class="card-img-top" alt="خبر 1">
+                    <div class="card-body">
+                        <h5 class="card-title">تحديث جديد للعبة GTA 6</h5>
+                        <p class="card-text">أعلنت Rockstar عن تحديث ضخم يتضمن مزايا جديدة مثيرة... </p>
+                        <a href="#" class="btn btn-outline-warning btn-sm">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" style="width: 300px;">
+                    <img src="images/png/image (2).webp" class="card-img-top" alt="خبر 1">
+                    <div class="card-body">
+                        <h5 class="card-title">تحديث جديد للعبة GTA 6</h5>
+                        <p class="card-text">أعلنت Rockstar عن تحديث ضخم يتضمن مزايا جديدة مثيرة... </p>
+                        <a href="#" class="btn btn-outline-warning btn-sm">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" style="width: 300px;">
+                    <img src="images/png/image (4).webp" class="card-img-top" alt="خبر 1">
+                    <div class="card-body">
+                        <h5 class="card-title">تحديث جديد للعبة GTA 6</h5>
+                        <p class="card-text">أعلنت Rockstar عن تحديث ضخم يتضمن مزايا جديدة مثيرة... </p>
+                        <a href="#" class="btn btn-outline-warning btn-sm">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card" style="width: 300px;">
+                    <img src="images/png/image (6).webp" class="card-img-top" alt="خبر 1">
+                    <div class="card-body">
+                        <h5 class="card-title">تحديث جديد للعبة GTA 6</h5>
+                        <p class="card-text">أعلنت Rockstar عن تحديث ضخم يتضمن مزايا جديدة مثيرة... </p>
+                        <a href="#" class="btn btn-outline-warning btn-sm">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كرر swiper-slide مع باقي الأخبار -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Characters Section -->
+<section id="characters" class="container my-5">
+    <h2 class="section-title">الشخصيات</h2>
+    <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+            <div class="card p-2">
+                <img src="images/png/image (3).webp" class="card-img-top" alt="Character 1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">ألكسندر</h5>
+                    <p class="card-text">شخصية رئيسية ذات خلفية غامضة وذكاء عالي.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card p-2">
+                <img src="images/png/image (2).webp" class="card-img-top" alt="Character 2" />
+                <div class="card-body text-center">
+                    <h5 class="card-title">ميا</h5>
+                    <p class="card-text">مقاتلة شجاعة وذات مهارات استثنائية في القتال.</p>
+                </div>
+            </div>
+        </div>
+        <!-- أضف المزيد من الشخصيات حسب الحاجة -->
+    </div>
+</section>
+
+<!-- Videos Section -->
+<section id="videos" class="container my-5">
+    <h2 class="section-title">فيديوهات</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/VQRLujxTm3c" title="Trailer 1" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/Pf41txV2JvI" title="Gameplay" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+<!-- Download Section -->
+<section id="download" class="container text-center my-5">
+    <h2 class="section-title">تحميل اللعبة</h2>
+    <p>قم بتحميل GTA 6 الآن واستمتع بتجربة لا مثيل لها.</p>
+    <a href="#" class="btn btn-main btn-lg">تحميل اللعبة</a>
+</section>
+<br><br>
+<!-- About Section -->
+<section id="about" class="container my-5">
+    <h2 class="section-title">حول الموقع</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="images/SnbmwAMZdgVK7uBHePWTXZ.jpg" alt="About Image" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 text-light">
+            <p>تم إنشاء هذا الموقع ليكون بوابتك السلسة لعالم GTA 6، حيث تجد كل ما تحتاجه من معلومات، تحديثات، وروابط تحميل موثوقة في مكان واحد.</p>
+            <p>إذا واجهت أي مشكلة أثناء التصفح أو التحميل، لا تتردد في طلب المساعدة. تم تصميم هذا الموقع بروح من الشغف والرغبة في تقديم أفضل تجربة ممكنة لك.</p>
+            <p>هدفنا أن تكون رحلتك داخل الموقع سلسة، ممتعة، ومليئة بالمفاجآت التي تليق بعشاق الألعاب الحقيقية.</p>
+
+            <p class="mt-4">لأي استفسار أو دعم فني، يمكنك التواصل معنا مباشرة عبر البريد الإلكتروني التالي:</p>
+            <a href="mailto:abdo_12ABDO@gmail.com" class="btn btn-outline-light mt-2">
+                <i class="bi bi-envelope-fill me-2"> </i> abdo_12ABDO@gmail.com
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    &copy; 2025 موقع GTA 6 الرسمي. جميع الحقوق محفوظة.
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        freeMode: true,
+    });
+</script>
+
+
+<script>
+    // نختار جميع روابط القائمة داخل الـ navbar-collapse
+    const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        // إذا كانت القائمة مفتوحة (أي تحتوي على الكلاس show)
+        if (navbarCollapse.classList.contains('show')) {
+          // نغلقها عن طريق تفعيل collapse Bootstrap
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: true
+          });
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>
